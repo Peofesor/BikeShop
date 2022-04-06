@@ -164,6 +164,40 @@ ALTER TABLE `servicepaket`
   ADD PRIMARY KEY (`ServiceID`);
 
 --
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `anschrift`
+--
+ALTER TABLE `anschrift`
+  MODIFY `AnschriftID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `fahrrad`
+--
+ALTER TABLE `fahrrad`
+  MODIFY `FahrradID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `fahrradstatus`
+--
+ALTER TABLE `fahrradstatus`
+  MODIFY `StatusID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `kunde`
+--
+ALTER TABLE `kunde`
+  MODIFY `KundenID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `kundeanschrift`
+--
+ALTER TABLE `kundeanschrift`
+  MODIFY `AnschriftID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- Constraints der exportierten Tabellen
 --
 
