@@ -48,7 +48,7 @@ CREATE TABLE `fahrrad` (
   `Rahmennummer` varchar(50) DEFAULT NULL,
   `Farbe` varchar(25) DEFAULT NULL,
   `Art` varchar(25) DEFAULT NULL,
-  `FahrradStatusID` int(11) DEFAULT NULL
+  `StatusID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -74,8 +74,8 @@ CREATE TABLE `kunde` (
   `Name` varchar(25) DEFAULT NULL,
   `Vorname` varchar(25) DEFAULT NULL,
   `Email` varchar(50) DEFAULT NULL,
-  `ServiceID` int(11) DEFAULT NULL,
-  `Passwort` varchar(50) DEFAULT NULL
+  `Passwort` varchar(50) DEFAULT NULL,
+  `ServiceID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -108,9 +108,8 @@ CREATE TABLE `kundefahrrad` (
 
 CREATE TABLE `servicepaket` (
   `ServiceID` int(11) NOT NULL,
-  `ServiceArt` varchar(10) DEFAULT NULL,
-  `Preis` double DEFAULT NULL,
-  `Laufzeit` date DEFAULT NULL
+  `Art` varchar(10) DEFAULT NULL,
+  `Preis` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -192,10 +191,10 @@ ALTER TABLE `kunde`
   MODIFY `KundenID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT für Tabelle `kundeanschrift`
+-- AUTO_INCREMENT für Tabelle `servicepaket`
 --
-ALTER TABLE `kundeanschrift`
-  MODIFY `AnschriftID` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `servicepaket`
+  MODIFY `ServiceID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints der exportierten Tabellen
