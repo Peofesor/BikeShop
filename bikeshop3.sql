@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 06. Apr 2022 um 11:15
+-- Erstellungszeit: 07. Apr 2022 um 08:40
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 7.3.27
 
@@ -77,6 +77,40 @@ CREATE TABLE `kunde` (
   `Passwort` varchar(50) DEFAULT NULL,
   `ServiceID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `kunde`
+--
+
+INSERT INTO `kunde` (`KundenID`, `Name`, `Vorname`, `Email`, `Passwort`, `ServiceID`) VALUES
+(1, 'Müller', 'Lucy', 'Müller.Lucy@web.de', 'nsfghsfghsfg', NULL),
+(2, 'Schmid', 'Ella', 'Schmid.Ella@web.de', 'fghfgbsf', NULL),
+(3, 'Weber', 'Amy', 'Weber.Amy@web.de', 'adfvdafvd', NULL),
+(4, 'Fischer', 'Finja', 'Fischer.Finja@web.de', 'adfvdfvsdf', NULL),
+(5, 'Wagner', 'Amelie', 'Wagner.Amelie@web.de', 'dfvsdfvsdfv', NULL),
+(6, 'Schäfer', 'Luise', 'Schäfer.Luise@web.de', 'dfvsdvfsdvf', NULL),
+(7, 'Bauer', 'Frieda', 'Bauer.Frieda@web.de', 'hshgzjjfsj', NULL),
+(8, 'Koch', 'Lukas', 'Koch.Lukas@web.de', 'frgnjz', NULL),
+(9, 'Richter', 'Konstantin', 'Richter.Konstantin@web.de', 'sfmhzk', NULL),
+(10, 'Klein', 'David', 'Klein.David@web.de', 'ysdfgmzkya', NULL),
+(11, 'Wolf', 'Katharina', 'Wolf.Katharina@web.de', 'sfgm ya', NULL),
+(12, 'Schröder', 'Oskar', 'Schröder.Oskar@web.de', 'sfgrmks', NULL),
+(13, 'Neumann', 'Julia', 'Neumann.Julia@web.de', 'sgfrmzksf', NULL),
+(14, 'Schwarz', 'Felix', 'Schwarz.Felix@web.de', 'öpuo', NULL),
+(15, 'Braun', 'Anna', 'Braun.Anna@web.de', 'aerv', NULL),
+(16, 'Hofmann', 'Pauline', 'Hofmann.Pauline@web.de', 'i,k zio.', NULL),
+(17, 'Zimmermann', 'Julian', 'Zimmermann.Julian@web.de', 'aervaerv', NULL),
+(18, 'Schmitt', 'Henry', 'Schmitt.Henry@web.de', 'zumgui,zg', NULL),
+(19, 'Hartmann', 'Tim', 'Hartmann.Tim@web.de', 'aservaer', NULL),
+(20, 'Köhler', 'Karl', 'Köhler.Karl@web.de', 'rastnhsrjsz', NULL),
+(21, 'Walter', 'Friedrich', 'Walter.Friedrich@web.de', 'dtzndtzns', NULL),
+(22, 'Schulze', 'Peter', 'Schulze.Peter@web.de', 'sdzmstzmn', NULL),
+(23, 'Lang', 'Quirin', 'Lang.Quirin@web.de', 'tbaebabt', NULL),
+(24, 'Weiß', 'Selma', 'Weiß.Selma@web.de', 'wr4hjta', NULL),
+(25, 'Jung', 'Maya', 'Jung.Maya@web.de', 'aergaerg', NULL),
+(26, 'Möller', 'Mia', 'Möller.Mia@web.de', 'edrhaer', NULL),
+(27, 'Hahn', 'Liam', 'Hahn.Liam@web.de', 'ethaerth', NULL),
+(28, 'Möller', 'Stefan', 'Möller.Stefan@web.de', 'rgervedfrve', NULL);
 
 -- --------------------------------------------------------
 
@@ -179,22 +213,10 @@ ALTER TABLE `fahrrad`
   MODIFY `FahrradID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT für Tabelle `fahrradstatus`
---
-ALTER TABLE `fahrradstatus`
-  MODIFY `StatusID` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT für Tabelle `kunde`
 --
 ALTER TABLE `kunde`
-  MODIFY `KundenID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT für Tabelle `servicepaket`
---
-ALTER TABLE `servicepaket`
-  MODIFY `ServiceID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `KundenID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints der exportierten Tabellen
