@@ -1,0 +1,22 @@
+
+## Kundedaten anzeigen
+
+	select * from Kunde k
+	join KundeAnschrift ka on k.KundenID = ka.KundenID
+	join Anschrift a on ka.AnschriftID = a.AnschriftID
+	join ServicePaket sp on k.ServiceID = sp.ServiceID
+	where k.Email = 'Müller.Lucy@web.de'
+
+
+## Fahrraddaten anzeigen
+
+	select * from Kunde k
+	join KundeFahrrad kf on k.KundenID = kf.FahrradID
+	join Fahrrad f on kf.FahrradID = f.FahrradID
+	join FahrradStatus fs on f.StatusID = fs.StatusID
+	where k.Email = 'Müller.Lucy@web.de'
+	
+## Fahrraddaten anpassen
+
+	update Fahrrad f
+	set 
