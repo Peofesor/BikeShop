@@ -263,7 +263,7 @@ ALTER TABLE `anschrift`
 -- AUTO_INCREMENT für Tabelle `fahrrad`
 --
 ALTER TABLE `fahrrad`
-  MODIFY `FahrradID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `FahrradID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT für Tabelle `fahrradstatus`
